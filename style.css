@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a, a:hover {
+    color: initial;
+    text-decoration: none;
+}
+
+.menu-cascade {
+    border-right: 1px solid black;
+    width: auto;
+    max-width: 140px;
+    position: relative;
+    overflow: hidden;
+    transition:  .3s;
+
+}
+
+.menu-cascade > ul {
+    transition:  .3s;
+}
+
+.menu-cascade > ul,
+.menu-cascade .subitems {
+    width: 140px;
+    padding: 20px;
+}
+
+.menu-cascade ul li .subitems {
+    position: absolute;
+    background: white;
+    left: 0;
+    top: 0;
+    transform: translateX(120px);
+    display: none;
+}
